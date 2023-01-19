@@ -19,9 +19,9 @@ app.post('/whatapp', (req, res) => {
         const client = require('twilio')(accountSid, authToken);
         client.messages
             .create({
-                body:`You have a new query! \n Student Name: ${name} \n Grade: ${grade} \n Subject: ${subject} \n Email: ${email} \n Contact Number: ${contactNumber} \n Alternate Number: ${alternateNumber} \n Board: ${board} \n Class Mode: ${classMode} \n Address ${address}`,
+                body:`You have a new query! \n Student Name: ${name} \n Grade: ${grade} \n Subject: ${subject} \n Email: ${email} \n Contact Number: ${contactNumber} \n Alternate Number: ${alternateNumber} \n Board: ${board} \n Class Mode: ${classMode} \n Address: ${address}`,
                 from: 'whatsapp:+14155238886',
-                to: 'whatsapp:+918076987610'
+                to: 'whatsapp:+919350444925'
             })
             .then(message => res.status(200).json({ message: 'received ' }))
     }
