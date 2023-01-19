@@ -11,6 +11,11 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 var port = process.env.PORT || 3000;
 
+app.use(cors({
+    origin: '*'
+}));
+
+
 app.post('/whatapp', (req, res) => {
 
     const {name,grade,subject,email,contactNumber,alternateNumber,board,classMode,address} = req.body;
