@@ -10,9 +10,6 @@ app.use(bodyParser.json())
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 var port = process.env.PORT || 3000;
-app.use(cors({
-    origin: 'https://www.section.io'
-}));
 
 app.post('/whatapp', (req, res) => {
 
