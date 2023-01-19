@@ -26,7 +26,7 @@ app.post('/whatapp', (req, res) => {
             .create({
                 body:`You have a new query! \n Student Name: ${name} \n Grade: ${grade} \n Subject: ${subject} \n Email: ${email} \n Contact Number: ${contactNumber} \n Alternate Number: ${alternateNumber} \n Board: ${board} \n Class Mode: ${classMode} \n Address: ${address}`,
                 from: 'whatsapp:+14155238886',
-                to: 'whatsapp:+919350444925'
+                to: 'whatsapp:+917206650668'
             })
             .then(message => res.status(200).json({ message: 'received ' }))
     }
